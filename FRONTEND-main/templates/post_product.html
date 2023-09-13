@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cargar producto</title>
+</head>
+<body style="background-image: url(img_fondo.jpg);">
+    <h1 style="margin: auto; width: 250px; height: 80px;">Ejercicio 2.2 TP 3.2</h1>
+    <form action="/cargar_product" method="post" style="margin: auto; width: 190px; height: 80px;">
+        <tr style="margin: auto; height: 80px;">
+            <td>
+                <label for="product_name">Nombre del producto:</label>
+                <input type="text" id="nombre" name="product_name" required>
+            </td>
+            <td>
+                <label for="brand_name">Marca del Producto:</label>
+                <input type="text" id="brand" name="brand_name" required>
+            </td>
+            <td>
+                <label for="category_name">Categoria del producto:</label>
+                <input type="text" id="category" name="category_name" required>
+            </td>
+            <td>
+                <label for="model_year">Año de Fabricacion:</label>
+                <input type="text" id="model" name="model_year" required>
+            </td>
+            <td>
+                <label for="list_price">Precio de Lista:</label>
+                <input type="text" id="price" name="list_price" required>
+            </td>
+            
+        </tr>
+        <button type="submit" style="margin-top: 20px; width: 100px;">Guardar</button>
+    </form>
+</body>
+<script ></script>
+</html>
