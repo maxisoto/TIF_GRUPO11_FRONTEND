@@ -7,26 +7,33 @@
     <title>Iniciar Sesión</title>
 </head>
 <body>
-    <h2 style="margin: auto; width: 220px; height: 120px;">Iniciar Sesión</h2>
-    <form id= "loginform" action="/login" method="post" style="margin: auto; width: 220px; height: 120px;">
-            <label for="nombre">Nombre de usuario:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-            <br>
-            <button type="submit" style="margin-top: 20px; margin-bottom: 20px;">Iniciar Sesión</button>
-            <button type="submit" style="margin-top: 20px; margin-bottom: 20px;">Registrarse</button>
-    </form>
-    <div src="message"></div>
-    <br>
-    <div>
-        <h1 style="margin: auto; width: 220px; color: aqua;">Grupo 11</h1>
-
+    <div class="position">
+      <form id= "loginform" action="/login" method="post" class="container">
+        <div class="centering-wrapper">
+            <div class="section1 text-center">
+                <div class="primary-header">Bienvenidos!</div>
+                <div class="secondary-header">Ingrese sus datos para iniciar sesion</div>
+                <div class="input-position">
+                    <div class="form-group">
+                        <h5 for="nombre" class="input-placeholder">Nombre de usuario</h5>
+                        <input type="text" class="form-style" id="nombre" name="nombre" required>        
+                    </div>      
+                    <div class="form-group">     
+                        <h5 for="contrasena" class="input-placeholder">Contraseña</h5>
+                        <input type="password" id="contrasena" name="contrasena" class="form-style" required>
+                    </div> 
+                </div>
+                <br>
+                 <div class="btn-position">
+                    <button type="submit" class="btn">Login</button>    
+                 </div>
+                 <button type="submit" class="btn">Registrarse</button>     
+            </div>      
+        </div>
+      </form>
+        <div src="message"></div><br>   
     </div>
-    <script src="loguin.js"></script>
-</body>
-<footer>
-    <p style="color: aquamarine; size: 50px; margin: auto; width: 220px;">Integrantes: Jimena Matorras, Nelson Solano, Emilio Ruso, Nahuel Soto</p>
-</footer>
+    <script src="login.js"></script>
+ </body>
+<footer> </footer>
 </html>
