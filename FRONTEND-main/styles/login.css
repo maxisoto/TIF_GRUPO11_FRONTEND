@@ -1,0 +1,10 @@
+img{
+  width: 100%;
+}
+body {
+  background-image: url("/FRONTEND-main/assets/img_fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+}
