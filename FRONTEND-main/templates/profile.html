@@ -4,18 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Datos de Registro</title>
-        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="../styles/profile.css">
     </head>
     <body>
-        <div class="container">
-            <article class="card">
-                <div class="backgronud">
-                    <img src="..assets/ima1.jpg" alt="profile">
-                </div>
-                <div class="content">
-                    <h2>Registrarse</h2>
-                    <form action="/cargar_usuario" method="post" style="margin: auto; width: 190px; height: 80px;">
-                        <tr style="margin: auto; height: 100px;">
+        <div class="position">
+                    <form action="/cargar_usuario" class="container" method="post">
+                        <h2>Registrarse</h2>
+                        <tr>
                             <td>
                                 <label for="user_name">Nombre:</label>
                                 <input type="text" id="user_first_name" name="user_first_name" required>
@@ -40,12 +35,7 @@
                                 <label for="user_date">Fecha de Nacimiento</label>
                                 <input type="date" id="user_date" name="user_date" required>
                             </td>
-                            <td>
-                                <p>Selecciona avatar...:
-                                    <input type="file" name="archivosubido">
-                                    <input type="submit" value="Enviar"> 
-                                </p>
-                            </td>
+                            <br>
                             <td>
                                 <label for="user_question">Pregunta Secreta</label>
                                 <input type="text" id="user_question" name="user_question" required>
@@ -55,10 +45,8 @@
                                 <input type="text" id="user_answer" name="user_answer" required>
                             </td>
                         </tr>
-                        <button type="submit" style="margin-top: 20px; width: 100px;">Guardar</button>
+                        <button type="submit">Guardar</button>
                     </form>
-                </div>
-            </article>
         </div>
     </body>
 </html>
